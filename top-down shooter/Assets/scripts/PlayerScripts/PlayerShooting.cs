@@ -1,0 +1,30 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class PlayerShooting : MonoBehaviour
+{
+    [SerializeField] float playerBulletSpeed = 4f;
+    [SerializeField] GameObject playerBullet;
+    [SerializeField] GameObject FunGun;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    void OnFire()
+    {
+        GameObject bullet = Instantiate(playerBullet, FunGun.transform.position, transform.rotation);
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        rb.AddForce(transform.up * playerBulletSpeed, ForceMode2D.Impulse);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
