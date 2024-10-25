@@ -8,16 +8,17 @@ TagManager:
   - Bullet
   - Enemy
   - wall
+  - Upgrade
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Bullets
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - upgrade
+  - enemy
   - 
   - 
   - 
