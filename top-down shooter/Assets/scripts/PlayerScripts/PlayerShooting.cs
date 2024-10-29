@@ -12,7 +12,7 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] GameObject FunGun;
     bool shotgunAquired = false;
 
-    // Start is called before the first frame update
+    // update github comment :3
     void Start()
     {
         
