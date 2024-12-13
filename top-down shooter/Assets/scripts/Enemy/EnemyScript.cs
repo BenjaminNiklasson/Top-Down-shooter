@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyScript : MonoBehaviour
 {
-    [SerializeField] float eSpeed = 3f;
+    [SerializeField] float eSpeed = 3f; 
     Rigidbody2D rb;
     GameObject player;
     void Start()
